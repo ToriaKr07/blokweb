@@ -74,7 +74,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dynamischdeelnav.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dynamischdeel.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschetsdeel.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
