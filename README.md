@@ -57,7 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  Met de tab functie kreeg je een stippellijn te zien om de elementen, dat vond ik niet echt bijpassend bij de rest van de website en het viel niet echt op op sommige plekken. Maar het werkte wel. Op de telefoom moet je bij een stukje wel horizontaal scrollen, dus dat is niet helemaal de bedoeling. Ook is de website niet kantelbaar op zijn kop, wel zijwaarts. Ook kwam ik tegen dat er meerdere h1's op een pagina stonden. Vervolgens kwam ik erachter dat er niet overal alt tekst was en de tekst die er was, was niet heel erg duidelijk. Alle media kan gepauzeerd worden. Voor linkjes worden op sommige momenten buttons gebruikt en andersom. Qua uiterlijk was er geen verschil tussen de donkere en lichte modus. Hetzelfde geld voor high-contrast. 
 </details>
 
 
