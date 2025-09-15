@@ -89,15 +89,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Ik vond het fijn hoe we tijdens de lessen uitleg kregen en er veel mee konden oefenen.
-  <img src="readme-images/.png" width="375px" alt="breakdown van de hele pagina">
+  Ik vond het fijn hoe we tijdens de lessen uitleg kregen en er veel mee konden oefenen. Hieronder wat ik tot nu toe heb op mijn website.
+  <img src="readme-images/websitebegin.png" width="375px" alt="Begin van de website">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | Toria          | ---                | ---          | ---              |
+  |                | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
