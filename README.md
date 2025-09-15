@@ -88,10 +88,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Ik vond het fijn hoe we tijdens de lessen uitleg kregen en er veel mee konden oefenen. Hieronder wat ik tot nu toe heb op mijn website.
   <img src="readme-images/websitebegin.png" width="375px" alt="Begin van de website">
-
+  
   ### Agenda voor meeting
   samen met je groepje opstellen
 
