@@ -1,0 +1,15 @@
+:root {
+	/* startje */
+	--color-text:#111;
+	--white-color:#ffffff;
+	--color-background:#eee;
+}
+
+
+main > section {
+    background-image: url("https://www.moooi.com/_next/image?url=https%3A%2F%2Fcdn.moooi.com%2Fassets%2FApplied%2FBrand-stores%20Showrooms%2FNew-York-Brandstore%2F2025%2FJPG%2FMOOOI_NewYork_Brand_Store_2025_0010-Horizontal.jpg&w=3840&q=80")
+}
+
+main > section h3 {
+    text-decoration: underline;
+}
