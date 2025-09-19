@@ -132,7 +132,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Nur            | Luuk               | Iris           | Toria            |
   | ---            | ---                | ---            | ---              |
   | 2de menu       | Zonder img         | Menu uitklappen| Footer ul/li     |
-  | Borders korter | dit als er tijd is | Drop down      | Header goed maken|
+  | Borders korter | Drop down          | Sectie goed    | Header goed maken|
   | ...            | ...                | ...            | ...              |
 
 
