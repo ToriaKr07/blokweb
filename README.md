@@ -133,7 +133,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---            | ---              |
   | 2de menu       | Zonder img         | Menu uitklappen| Footer ul/li     |
   | Borders korter | Drop down          | Sectie goed    | Header goed maken|
-  | ...            | ...                | ...            | ...              |
+  | ...            | ...                | ...            | Video            |
 
 
   ### Verslag van meeting
