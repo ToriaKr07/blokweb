@@ -107,7 +107,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Language aanpassen als je Engelse tekst hebt.
   - In css uppercase ipv in hoofdletters het schrijven.
   - Searchveld gebruiken ipv een gewone button.
-  - ...
+  - Stylesheet namen veranderen
+  - Tempo maken
+  - Favicon aanpassen
 
 </details>
 
