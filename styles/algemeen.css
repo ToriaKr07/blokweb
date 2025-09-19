@@ -1,0 +1,92 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	color-scheme:light dark;
+	--color-text:#111;
+	--white:#ffffff;
+	--color-background:#eee;
+	--heading-color:light-dark(red, pink);
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--color-text:#ffffff;
+		--white-color:#ffffff;
+		--color-background:#eeeeee;
+	}
+} */
+ 
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+/* header > a {
+	margin-right: auto;
+	margin-left: auto;
+} */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* verdeelt in links, midden, rechts */
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+}
+
+/* Logo in het midden */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* Linkergroep (eerste 2 icoontjes) */
+header img:nth-of-type(1),
+header img:nth-of-type(2) {
+  margin-right: 8px; /* kleine ruimte tussen menu en zoek */
+}
+
+/* Rechtergroep (laatste 2 icoontjes) */
+header a:nth-of-type(2),
+header a:nth-of-type(3) {
+  margin-left: 8px; /* kleine ruimte tussen hart en winkelmand */
+}
+
+header img {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+h1 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
