@@ -7,15 +7,12 @@ section:nth-of-type(1) {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    margin-top:-3em;
 }
 
 section:nth-of-type(1) a {
     color: var(--white);
     text-decoration: none;
-}
-
-section:nth-of-type(2) {
-    background-color: blue;
 }
 
 section:nth-of-type(3) {
@@ -40,11 +37,74 @@ section:nth-of-type(2) h2 {
     /* padding-top: 2em; */
 }
 
+/* Container van de lijst */
 section ul {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    gap: 1em;
+    padding: 1em 2em;      /* ruimte aan zijkanten */
+    box-sizing: border-box; 
+    margin: 0;             /* verwijdert standaard marges van ul */
 }
 
-section li img {
-    width: 10vh;
+/* Elke lijst-item */
+section li {
+    list-style: none;
+    background-color: var(--white-beige);
+    border-radius: 0.5em;
+    overflow: hidden;       /* afbeelding netjes binnen border-radius */
+    text-align: center;
+    max-width: 18em;        /* niet te groot */
+    width: 100%;
+    margin: 0 auto;         /* centreren */
+    padding: 1em;           /* binnenruimte in het blok */
+}
+
+/* Link binnen elk li */
+section li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;  /* verwijdert underline */
+    color: inherit;         /* behoudt normale tekstkleur */
+    gap: 0.5em;             /* ruimte tussen img en h3 */
+}
+
+/* Afbeeldingen */
+section li a img {
+    width: 100%;
+    height: auto;           /* behoudt verhoudingen */
+    order: 1;
+    object-fit: cover;
+}
+
+/* Titel */
+section li a h3 {
+    order: 2;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* hover effect als extraatje toegevoegd, want anders zie je niet dat je eroverheen hovert */
+section li a:hover {
+    scale: 1.03
+}
+
+/* Voor schermen groter dan 767px */
+@media (min-width: 768px) {
+
+    /* alle li naast elkaar */
+    section ul {
+        display: flex;
+    }
+
+    /* geen achtergrondkleur meer */
+    section li {
+        background-color: transparent;
+        transition: 1s;
+    }
+
+    section li:hover {
+        background-color: var(--white-beige);
+    }
 }

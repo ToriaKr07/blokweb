@@ -10,21 +10,26 @@
 	<link href="styles/algemeen.css" rel="stylesheet">
 	<link href="styles/index.css" rel="stylesheet">
 	<!-- favicon aanpassen -->
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.ico">
 </head>
 
 <body>
 	<header>
-		<img src="images/dropdownicon.svg" alt="Ga naar het dropdownmenu">
+		<nav>
+			<img src="images/dropdownicon.svg" alt="Ga naar het dropdownmenu">
+		</nav>
 		<!-- search input veld maken ervan -->
-		<img src="images/searchicon.svg" alt="Klik hier om te zoeken">
+		<search><img src="images/searchicon.svg" alt="Klik hier om te zoeken"></search>
+		
 		<a href="index.html">moooi</a>
+		<nav>
 		<a>
 			<img src="images/hearticon.svg" alt="Klik hier om naar je opgeslagen moodboards te gaans">
 		</a>
 		<a>
 			<img src="images/winkelwagenicon.svg" alt="Klik hier om naar je winkelmand toe te gaan">
 		</a>
+		</nav>
 	</header>
 	<main>
 		<section>
@@ -41,13 +46,13 @@
 			<ul>
 				<li>
 					<a href="#">
-						<h4>Bed en bad</h4>
+						<h3>Bed en bad</h3>
 						<img src="images/bedbad.png"alt="Bekijk de bed en bad producten">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						Meubels
+						<h3>Meubels</h3>
 						<img src="images/meubels.png" alt="Bekijk de meubels">
 					</a>
 				</li>
@@ -105,27 +110,68 @@
 		</section>
 	</main>
 	<footer>
-		<button>Netherlands - Dutch</button>
-		<a href="#">Winkels</a>
-		<a href="#">Materialenbibliotheek</a>
-		<a href="#">Verzendingen & retouren</a>
-		<a href="#">FAQ</a>
-		<a href="#">Nieuwsbrief</a>
-		<a href="#">Persberichten</a>
-		<a href="#">Vacatures</a>
-		<a href="#">Interieur Professional Service</a>
-		<a href="#">Disclaimer</a>
-		<a href="#">Coockie Policy</a>
-		<a href="#">Algemene voorwaarden</a>
-		<a href="#">Privacy Statement</a>
-		<a href="#">2025 Moooi</a>
-		<img src="images/pinterest.svg" alt="Bekijk ons op pinterest">
-		<img src="images/instagram.svg" alt="Bekijk ons op instagram">
-		<img src="images/vimeo.svg" alt="Bekijk ons op vimeo">
-		<img src="images/linkedin.svg" alt="Bekijk ons op linkedin">
-		<img src="images/facebook.svg" alt="Bekijk ons op facebook">
-		<img src="images/spotify.svg" alt="Bekijk ons op spotify">
-		
+		<button lang="en">
+			<h3>Netherlands - Dutch</h3>
+			<svg viewBox="0 0 18 12" class="styles_country-selector-flag__SgSfN"><g width="18" height="12" fill="none"><rect width="18" height="4" fill="#AE1B28"></rect><rect y="3.99994" width="18" height="4" fill="white"></rect><rect y="8" width="18" height="4" fill="#21468B"></rect></g></svg>
+			<svg viewBox="0 0 26 26" class="styles_country-selector-arrow__YTePw"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.41016 12.2197L8.19016 11.1797L13.0002 14.7872L17.8102 11.1797L18.5902 12.2197L13.0002 16.4122L7.41016 12.2197Z" fill="currentcolor"></path></svg>
+		</button>
+		<ul>
+			<li><a href="#">Winkels</a></li>
+			<li><a href="#">Materialenbibliotheek</a></li>
+			<li><a href="#">Verzendingen & retouren</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Nieuwsbrief</a></li>
+			<li><a href="#">Persberichten</a></li>
+			<li><a href="#">Vacatures</a></li>
+			<li><a href="#">Interieur Professional Service</a></li>
+		</ul>
+		<ul>
+			<li>
+				<a>
+					<svg viewBox="0 0 22 22" class="styles_icon__bOeAy"><path d="M10.7145 0.0856934C4.85978 0.0856934 0.0859375 4.90035 0.0859375 10.8051C0.0859375 15.211 2.69804 18.9809 6.48109 20.6161C6.43606 19.7985 6.39102 18.7992 6.57117 18.0725C6.79635 17.1641 7.87722 12.4403 7.87722 12.4403C7.87722 12.4403 7.51693 11.759 7.51693 10.7597C7.51693 9.16994 8.41766 7.98899 9.54356 7.98899C10.4893 7.98899 10.9847 8.71573 10.9847 9.57873C10.9847 10.5326 10.3542 12.0315 10.039 13.3487C9.76874 14.4842 10.5794 15.3927 11.7053 15.3927C13.6869 15.3927 15.2632 13.2579 15.2632 10.1692C15.2632 7.44394 13.3266 5.53624 10.5794 5.53624C7.38182 5.53624 5.4903 7.94357 5.4903 10.4417C5.4903 11.3956 5.85058 12.4857 6.34598 13.0307C6.43606 13.1216 6.43605 13.2579 6.43605 13.3487C6.34598 13.7121 6.16584 14.4842 6.1208 14.6205C6.07577 14.8476 5.94066 14.893 5.76051 14.7568C4.36438 14.0754 3.46366 12.0315 3.46366 10.3509C3.46366 6.76262 6.03073 3.49229 10.8947 3.49229C14.8128 3.49229 17.8302 6.3084 17.8302 10.0329C17.8302 13.9392 15.3983 17.1187 11.9755 17.1187C10.8496 17.1187 9.76875 16.5282 9.40845 15.8014C9.40845 15.8014 8.86802 17.9817 8.73291 18.4813C8.55276 19.2535 8.05737 20.1619 7.65204 20.8886C8.64284 21.2066 9.67867 21.3428 10.7145 21.3428C16.5692 21.3428 21.3431 16.5282 21.3431 10.6234C21.298 4.85493 16.5692 0.0856934 10.7145 0.0856934Z" fill="currentcolor"></path></svg>
+				</a>
+			</li>
+			<li>
+				<a>
+					<svg viewBox="0 0 22 22" class="styles_icon__bOeAy"><path d="M6.38406 0.12681C2.97799 0.12681 0.228516 2.8816 0.228516 6.29426V15.1754C0.228516 18.588 2.97799 21.3428 6.38406 21.3428H15.3301C18.7362 21.3428 21.4857 18.588 21.4857 15.1754V6.25314C21.4857 2.84049 18.7362 0.0856934 15.3301 0.0856934L6.38406 0.12681ZM6.38406 1.93593H15.3301C17.7513 1.93593 19.639 3.8684 19.639 6.25314V15.1343C19.639 17.5601 17.7103 19.4515 15.3301 19.4515H6.38406C3.96288 19.4515 2.07518 17.519 2.07518 15.1343V6.25314C2.07518 3.8684 3.96288 1.93593 6.38406 1.93593ZM16.5612 3.74505C15.8636 3.74505 15.2891 4.32068 15.2891 5.01965C15.2891 5.71863 15.8636 6.29426 16.5612 6.29426C17.2589 6.29426 17.8334 5.71863 17.8334 5.01965C17.8334 4.32068 17.2589 3.74505 16.5612 3.74505ZM10.8571 5.26635C7.86139 5.26635 5.39917 7.73333 5.39917 10.7348C5.39917 13.7363 7.86139 16.2033 10.8571 16.2033C13.8528 16.2033 16.315 13.7363 16.315 10.7348C16.315 7.73333 13.8528 5.26635 10.8571 5.26635ZM10.8571 7.07547C12.8679 7.07547 14.4683 8.67901 14.4683 10.6937C14.4683 12.7084 12.8679 14.3119 10.8571 14.3119C8.84628 14.3119 7.24584 12.7084 7.24584 10.6937C7.2048 8.67901 8.84628 7.07547 10.8571 7.07547Z" fill="currentcolor"></path></svg>
+				</a>
+			</li>
+			<li>
+				<a>
+					<svg viewBox="0 0 22 22" class="styles_icon__bOeAy"><path fill="currentcolor" fill-rule="evenodd" clip-rule="evenodd" d="M2.40042 21.3428H19.6009C20.6962 21.3428 21.5886 20.4487 21.6292 19.3512V2.11792C21.6292 0.979875 20.7367 0.0856934 19.6009 0.0856934H2.40042C1.26455 0.0856934 0.37207 0.979875 0.37207 2.11792V19.3106C0.37207 20.4487 1.26455 21.3428 2.40042 21.3428ZM15.2598 13.2139C17.2882 10.6126 18.3023 8.58039 18.3835 7.07654C18.4646 5.04431 17.6938 4.02819 16.1117 3.98755C13.9617 3.9469 12.5418 5.1256 11.771 7.60492C12.1767 7.44234 12.5418 7.36105 12.9069 7.36105C13.6777 7.36105 14.0022 7.7675 13.9211 8.66168C13.8805 9.19006 13.556 9.96231 12.9069 10.9784C12.2578 11.9945 11.771 12.5229 11.4465 12.5229C11.0408 12.5229 10.6352 11.7507 10.3106 10.1655C10.1889 9.67779 9.98608 8.4991 9.70211 6.62945C9.45871 4.88173 8.68794 4.06883 7.51149 4.19077C7.02469 4.23141 6.25391 4.6785 5.23973 5.57269C4.98864 5.79631 4.73753 6.02475 4.48479 6.25468C4.00253 6.6934 3.51427 7.13759 3.00855 7.56427L3.73875 8.4991C4.42839 8.01136 4.83406 7.7675 4.95577 7.7675C5.48314 7.7675 5.96994 8.58039 6.41618 10.2468C6.78437 11.4876 7.12494 12.7561 7.46068 14.0066C7.53185 14.2717 7.60281 14.536 7.67376 14.799C8.28227 16.4655 9.05304 17.2783 9.94551 17.2783C11.4059 17.2783 13.1909 15.9371 15.2598 13.2139Z"></path></svg>
+				</a>
+			</li>
+			<li>
+				<a>
+					<svg viewBox="0 0 50 51" class="styles_icon__bOeAy"><path d="M3.733.098C1.67.098 0 1.652 0 3.69v42.523c0 1.942 1.67 3.592 3.733 3.592h42.534c2.063 0 3.733-1.553 3.733-3.592V3.69C50 1.75 48.33.098 46.267.098H3.733zm7.662 8.35c2.554 0 4.126 1.65 4.224 3.883 0 2.136-1.67 3.883-4.224 3.883-2.554 0-4.126-1.747-4.126-3.883-.098-2.233 1.572-3.884 4.126-3.884zm22.299 10.29c4.911 0 8.644 3.204 8.644 10.097V41.65h-7.564V29.71c0-3.01-1.08-5.049-3.831-5.049-2.063 0-3.34 1.36-3.831 2.719-.196.485-.196 1.165-.196 1.845v12.523h-7.564s.098-20.29 0-22.426h7.564v3.204c.982-1.65 2.75-3.787 6.777-3.787zm-6.779 3.69c-.098.097-.098 0 0 0zM7.663 19.224h7.564V41.65H7.662V19.224z" fill="currentcolor"></path></svg>
+				</a>
+			</li>
+			<li>
+				<a>
+					<svg viewBox="0 0 22 22" class="styles_icon__bOeAy"><path d="M21.9144 10.7143C21.9144 4.81432 17.1424 0.0856934 11.2858 0.0856934C5.42924 0.0856934 0.657227 4.85771 0.657227 10.7143C0.657227 16.0069 4.5616 20.4318 9.63729 21.2127V13.7944H6.94761V10.7143H9.63729V8.37164C9.63729 5.72535 11.2424 4.25036 13.6718 4.25036C14.8431 4.25036 16.0578 4.46727 16.0578 4.46727V7.07019H14.6696C13.3681 7.07019 12.9343 7.89444 12.9343 8.7187V10.7143H15.8843L15.4071 13.7944H12.9343V21.2127C18.01 20.4318 21.9144 16.0502 21.9144 10.7143Z" fill="currentcolor"></path></svg>
+				</a>
+			</li>
+			<li>
+				<a>
+					<svg viewBox="0 0 22 22" class="styles_icon__bOeAy"><path d="M11 0C4.925 0 0 4.925 0 11s4.925 11 11 11c6.076 0 11-4.925 11-11S17.076 0 11 0zm5.044 15.865a.685.685 0 01-.943.227c-2.582-1.577-5.834-1.935-9.663-1.06a.686.686 0 01-.305-1.337c4.19-.957 7.785-.545 10.684 1.227.323.198.426.62.227.943zm1.347-2.995a.858.858 0 01-1.18.282c-2.956-1.817-7.464-2.343-10.96-1.282A.859.859 0 014.18 11.3a.859.859 0 01.572-1.07c3.995-1.212 8.96-.625 12.356 1.462.404.248.531.776.283 1.179zm.115-3.12C13.961 7.646 8.112 7.453 4.727 8.48a1.029 1.029 0 11-.597-1.97c3.885-1.179 10.345-.95 14.426 1.472a1.028 1.028 0 11-1.05 1.77z" fill="currentcolor"></path></svg>
+				</a>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="#">Disclaimer</a></li>
+			<li><a href="#">Coockie Policy</a></li>
+			<li><a href="#">Algemene voorwaarden</a></li>
+			<li><a href="#">Privacy Statement</a></li>
+			<li><a href="#">2025 Moooi</a></li>
+		</ul>
+		<!-- <ul>
+			<li><img src="images/pinterest.svg" alt="Bekijk ons op pinterest"></li>
+			<li><img src="images/instagram.svg" alt="Bekijk ons op instagram"></li>
+			<li><img src="images/vimeo.svg" alt="Bekijk ons op vimeo"></li>
+			<li><img src="images/linkedin.svg" alt="Bekijk ons op linkedin"></li>
+			<li><img src="images/facebook.svg" alt="Bekijk ons op facebook"></li>
+			<li><img src="images/spotify.svg" alt="Bekijk ons op spotify"></li>
+		</ul> -->
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>

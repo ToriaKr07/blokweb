@@ -2,7 +2,9 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0; 
 }
 
 /*********************/
@@ -15,6 +17,8 @@
 	--white:#ffffff;
 	--color-background:#eee;
 	--heading-color:light-dark(red, pink);
+  --white-beige:#f8f6f1;
+  --grijs:#929292;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -40,46 +44,14 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* verdeelt in links, midden, rechts */
   padding: 10px 20px;
   position: relative;
   width: 100%;
 }
 
-/* Logo in het midden */
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+header a:nth-of-type(1) {
+  margin-inline: auto;
 }
-
-/* Linkergroep (eerste 2 icoontjes) */
-header img:nth-of-type(1),
-header img:nth-of-type(2) {
-  margin-right: 8px; /* kleine ruimte tussen menu en zoek */
-}
-
-/* Rechtergroep (laatste 2 icoontjes) */
-header a:nth-of-type(2),
-header a:nth-of-type(3) {
-  margin-left: 8px; /* kleine ruimte tussen hart en winkelmand */
-}
-
-header img {
-  width: 24px;
-  height: auto;
-  cursor: pointer;
-}
-
-
-
-
-
-
 
 h1 {
   clip: rect(0 0 0 0);
@@ -89,4 +61,60 @@ h1 {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+footer {
+  background-color: black;
+}
+
+/* bovenste deel van de footer */
+footer button {
+  display: flex;
+  align-items: center;
+  border-radius: 3em;
+  margin:1em;
+  background-color: transparent;
+  border-color: var(--white)
+}
+
+footer button h3:nth-of-type(1) {
+  order: 2;
+  color: var(--white)
+}
+
+footer button svg:nth-of-type(2) {
+  order: 3;
+}
+
+footer button:hover {
+  border: solid .3em;
+  border-color: var(--grijs);
+}
+
+/* social media icoontjes */
+footer ul:nth-of-type(2) {
+  /* background-color: lightblue; */
+  display: flex;
+}
+
+footer ul:nth-of-type(2) li {
+  list-style: none;
+}
+
+footer ul:nth-of-type(2) a {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    color: var(--grijs);
+    margin: 1em;
+}
+
+@media (min-width: 768px) {
+    svg {
+        width: 3em;
+    }
 }
