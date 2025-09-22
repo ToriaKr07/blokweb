@@ -19,6 +19,7 @@
 	--heading-color:light-dark(red, pink);
   --white-beige:#f8f6f1;
   --grijs:#929292;
+  --donkergrijs: #3e3e3e;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -49,6 +50,14 @@ header {
   width: 100%;
 }
 
+header img {
+  filter: invert(1);
+}
+
+header svg {
+  width: 7em;
+}
+
 header a:nth-of-type(1) {
   margin-inline: auto;
 }
@@ -63,6 +72,11 @@ h1 {
   width: 1px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 footer {
   background-color: black;
 }
@@ -71,10 +85,12 @@ footer {
 footer button {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 3em;
-  margin:1em;
+  margin: 1em;                                  /*???Wit vlak erboven???*/
   background-color: transparent;
-  border-color: var(--white)
+  border-color: var(--white);
+  /* width: 50vw; */
 }
 
 footer button h3:nth-of-type(1) {
@@ -91,9 +107,12 @@ footer button:hover {
   border-color: var(--grijs);
 }
 
+footer ul:nth-of-type(1) a:hover {
+  color: var(--grijs);
+}
+
 /* social media icoontjes */
 footer ul:nth-of-type(2) {
-  /* background-color: lightblue; */
   display: flex;
 }
 
@@ -107,14 +126,31 @@ footer ul:nth-of-type(2) a {
 }
 
 svg {
-    display: block;
+    display: flex;
     width: 100%;
-    color: var(--grijs);
+    color: var(--white);
     margin: 1em;
 }
 
-@media (min-width: 768px) {
-    svg {
-        width: 3em;
-    }
+/* derde deel footer */
+footer ul:nth-of-type(3) a {
+  color: var(--grijs);
 }
+
+footer ul:nth-of-type(3) a:hover {
+  color: var(--donkergrijs);
+}
+
+@media (min-width: 768px) {
+  svg {
+    width: 3em;
+  }
+}
+
+@media (min-width: 1025px) {
+  footer ul:nth-of-type(1) {
+    columns: 26.3888888889vw 2;       /* Mag dit??? */
+  }
+}
+
+
