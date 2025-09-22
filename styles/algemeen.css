@@ -13,7 +13,7 @@
 :root {
 	/* startje */
 	color-scheme:light dark;
-	--color-text:#111;
+	--zwart:#000000;
 	--white:#ffffff;
 	--color-background:#eee;
 	--heading-color:light-dark(red, pink);
@@ -45,9 +45,20 @@
 header {
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
   padding: 10px 20px;
   position: relative;
   width: 100%;
+}
+
+header nav > button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 header img {
@@ -60,6 +71,37 @@ header svg {
 
 header a:nth-of-type(1) {
   margin-inline: auto;
+}
+
+header nav:nth-of-type(2) {
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  /* JOUW CODE HIER - stap 2 */
+  translate:-100%;
+  background-color: var(--white);
+  /* JOUW CODE HIER - stap 4 */
+  @media (prefers-reduced-motion:no-preference) {
+    transition: .5s;
+  }
+}
+
+nav:nth-of-type(2).is-open {
+  /* JOUW CODE HIER - stap 4 */
+  translate: 0%;
+  /* background: none; */
+  z-index:999;
+  /* background-image: none; */
+}
+
+header nav a {
+  color: var(--zwart);
+}
+
+header nav:nth-of-type(2) svg {
+  color: var(--zwart);
 }
 
 h1 {
@@ -90,7 +132,12 @@ footer button {
   margin: 1em;                                  /*???Wit vlak erboven???*/
   background-color: transparent;
   border-color: var(--white);
-  /* width: 50vw; */
+  width: fit-content;
+  height: 3em;
+}
+
+button svg {
+  width: 3em;
 }
 
 footer button h3:nth-of-type(1) {
