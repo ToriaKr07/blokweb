@@ -178,18 +178,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Luuk           | Toria              | Iris            | Nur              |
   | ---            | ---                | ---             | ---              |
-  | dit bespreken  | Video github       | Menu uitklappen | Pauze video      |
-  | en dat ook nog | dit als er tijd is | Tekst afbeelding| SVG hamburger    |
-  | ...            | ...                | ...             | Footer responsive|
-
+  | Border box     | Video github       | Menu uitklappen | Pauze video      |
+  | Background     | Beginscherm        | Tekst afbeelding| SVG hamburger    |
+  | ...            | Pauze knop         | ...             | Footer responsive|
+                     Fonts
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De video die ik in github wil zetten moet ik kleiner maken.
+  - Bij het beginscherm kan ik een linear gradient gebruiken. Dat is me uitgelegd hoe het werkt.
+  - En als laatste heb ik uitleg gekregen over hoe ik de pauze knop goed kan maken. En een codepen bestand gekregen daarvoor.
 
 </details>
 

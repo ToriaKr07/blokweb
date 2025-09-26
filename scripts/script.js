@@ -27,12 +27,12 @@ function sluitMenu() {
 
 
 // Video homepagina
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+var video = document.querySelector("video");
+var btn = document.querySelector("section:nth-of-type(3) button");
 
-btn.addEventListener("click", myFunction);
+btn.addEventListener("click", videoPauzeren);
 
-function myFunction() {
+function videoPauzeren() {
   if (video.paused) {
     video.play();
     btn.innerHTML = "Pause";
