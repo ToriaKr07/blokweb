@@ -176,11 +176,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Luuk           | Toria              | Iris         | Nur              |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | Video uploaden     | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Luuk           | Toria              | Iris            | Nur              |
+  | ---            | ---                | ---             | ---              |
+  | dit bespreken  | Video github       | Menu uitklappen | Pauze video      |
+  | en dat ook nog | dit als er tijd is | Tekst afbeelding| SVG hamburger    |
+  | ...            | ...                | ...             | Footer responsive|
 
 
   ### Verslag van meeting
