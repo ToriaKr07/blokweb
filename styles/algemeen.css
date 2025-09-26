@@ -29,28 +29,20 @@
 		--color-background:#eeeeee;
 	}
 } */
- 
-
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
-/* header > a {
-	margin-right: auto;
-	margin-left: auto;
-} */
-
 header {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 10px 20px;
   position: relative;
   width: 100%;
 }
 
+/*https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit*/
 header nav > button, input[type="submit"], input[type="reset"] {
   background: none;
   color: inherit;
@@ -59,6 +51,13 @@ header nav > button, input[type="submit"], input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+header nav:nth-of-type(2) a {
+  color: var(--zwart);
+  position: relative;
+  left:1em;
+  top:1em;
 }
 
 header img {
@@ -79,30 +78,51 @@ header nav:nth-of-type(2) {
   right:0;
   top:0;
   bottom:0;
-  /* JOUW CODE HIER - stap 2 */
+
   translate:-100%;
   background-color: var(--white);
-  /* JOUW CODE HIER - stap 4 */
+
   @media (prefers-reduced-motion:no-preference) {
     transition: .5s;
   }
 }
 
+header nav:nth-of-type(2) button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+header nav:nth-of-type(2) button svg {
+  color: var(--zwart);
+  height: 1em;
+}
+
+header ul:nth-of-type(2) a {
+  display: flex;
+  align-items: center;
+}
+
+/* 2e deel header */
+header ul:nth-of-type(2) svg {
+  color: var(--zwart);
+  height: 3em;
+}
+
+
+
+/* Dropdown */
 nav:nth-of-type(2).is-open {
-  /* JOUW CODE HIER - stap 4 */
   translate: 0%;
-  /* background: none; */
   z-index:999;
-  /* background-image: none; */
 }
 
-header nav a {
-  color: var(--zwart);
+@media (min-width: 650px) {
+  nav:nth-of-type(2).is-open {
+    width: 30em;
+  }
 }
 
-header nav:nth-of-type(2) svg {
-  color: var(--zwart);
-}
 
 h1 {
   clip: rect(0 0 0 0);
@@ -134,9 +154,10 @@ footer button {
   border-color: var(--white);
   width: fit-content;
   height: 3em;
+  width: 3em;
 }
 
-button svg {
+footer button svg {
   width: 3em;
 }
 
