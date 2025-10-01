@@ -78,7 +78,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 </details>
 
+## Breakdownschets (2)
 
+<details>
+
+  ### de hele pagina: 
+  <img src="readme-images/helepagina2.png" width="375px" alt="breakdown van de hele pagina">
+
+  ### dynamisch deel (bijv menu): 
+  <img src="readme-images/deel.png" width="375px" alt="breakdown van een dynamisch deel">
+
+</details>
 
 
 
@@ -158,6 +168,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  In de test kwam naar voren dat ik nog geen focus states toe had gevoegd, er zat er wel standaart al eentje. Ook had ik nog geen dark en light modus gemaakt. De website die ik namaakte had meerdere H1's, dat heb ik verbeterd. En de linkjes die zij hadden waren veel lees meer. Maar dan snap je natuurlijk niet wat daarmee bedoeld wordt als het voor je voorgelezen wordt.
+
+  De echte site had ook dat je horizontaal moet scrollen, dat heb ik veranderd. 
 </details>
 
 
@@ -230,8 +243,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit
+  2. https://www.w3schools.com/howto/howto_css_fullscreen_video.asp
 
 </details>
