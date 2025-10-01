@@ -43,6 +43,7 @@
   --grijs:#929292;
   --donkergrijs: #3e3e3e;
   --section4: #4c363a;
+  --tekstmarkering:light-dark(#f3f3f3, black)
 }
 
 /* @media (prefers-color-scheme: dark) {
