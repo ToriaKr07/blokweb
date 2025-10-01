@@ -1,3 +1,13 @@
+h1 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 section:nth-of-type(1) {
     /* background-color: red; */
     display: flex;
@@ -7,7 +17,7 @@ section:nth-of-type(1) {
         linear-gradient(rgb(0 0 0 / .5), rgb(0 0 0 / .5)),
         url("../images/achtergrondfoto.jpg");
     background-blend-mode: darken;
-    height: 100vh;
+    height: 105vh;
     background-size: cover;
     background-position: center;
     margin-top:-5em;
@@ -16,23 +26,33 @@ section:nth-of-type(1) {
 section:nth-of-type(1) a {
     color: var(--white);
     text-decoration: none;
+    text-align: center;
 }
 
 section:nth-of-type(1) p {
 	text-transform: uppercase;
 }
 
-main > section h3 {
+section:nth-of-type(1) h4 {
     text-decoration: underline;
 }
+
+/* SECTION 2 */
+
+section:nth-of-type(2) {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
 
 section:nth-of-type(2) h2 {
     display: flex;
     justify-content: center;
-    /* padding-top: 2em; */
+    font-family: '23';
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
-/* Container van de lijst */
 section ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
@@ -42,7 +62,6 @@ section ul {
     margin: 0;
 }
 
-/* Elke lijst-item */
 section li {
     list-style: none;
     background-color: var(--white-beige);
@@ -55,7 +74,6 @@ section li {
     padding: 1em;
 }
 
-/* Link binnen elk li */
 section li a {
     display: flex;
     flex-direction: column;
@@ -65,7 +83,6 @@ section li a {
     gap: 0.5em;
 }
 
-/* Afbeeldingen */
 section li a img {
     width: 100%;
     height: auto;
@@ -73,11 +90,12 @@ section li a img {
     object-fit: cover;
 }
 
-/* Titel */
 section li a h3 {
     order: 2;
     margin: 0;
     text-decoration: none;
+    font-family: '1';
+    text-transform: none;
 }
 
 /* hover effect als extraatje toegevoegd, want anders zie je niet dat je eroverheen hovert */
@@ -122,15 +140,38 @@ video {
   z-index: -1;
 }
 
-/* #myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-} */
+section:nth-of-type(3) a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    height: 95vh;
+    text-align: center;
+}
+
+section:nth-of-type(3) p {
+    font-family: '1';
+    font-size: 16px;
+    width: 80vw;
+}
+
+section:nth-of-type(3) h2 {
+    font-family: '5';
+    font-size: 38px;
+    margin:.5em;
+}
+
+section:nth-of-type(3) h3 {
+    font-family: '23';
+    font-size: 14px;
+}
+
+section:nth-of-type(3) button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
 
 section:nth-of-type(3) button:hover {
   background: #ddd;
