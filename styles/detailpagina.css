@@ -6,11 +6,10 @@ header img {
     filter: invert(0);
 }
 
-/* === GRID LAYOUT (basis: mobiel) === */
 section:nth-of-type(1) {
   display: grid;
-  grid-template-columns: 1fr; /* klein scherm: één kolom */
-  grid-template-rows: auto;  /* rijen automatisch */
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   padding: 2em;
   gap: 1em;
   align-items: start;
@@ -21,23 +20,22 @@ section:nth-of-type(1)  > img {
   height: auto;
   border-radius: 1em;
   justify-self: center;
-  order: -1; /* afbeelding bovenaan */
+  order: -1;
 }
 
 section:nth-of-type(1)  > :not(img):not(button:last-of-type) {
   text-align: center;
 }
 
-/* === BUTTONS ALGEMEEN === */
 section:nth-of-type(1)  > div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* altijd twee kolommen */
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5em;
   margin-bottom: 1em;
 }
 
 section:nth-of-type(1)  > div > button {
-  background: white;
+  background: var(--buttonskleur);
   border: 0.0625em solid #ccc;
   border-radius: 0.25em;
   padding: 0.75em 1em;
@@ -51,7 +49,6 @@ section:nth-of-type(1)  > div > button:hover {
   background: #f5f5f5;
 }
 
-/* === WINKELWAGENKNOP === */
 section:nth-of-type(1)  > button:last-of-type {
   background: black;
   color: white;
@@ -62,25 +59,24 @@ section:nth-of-type(1)  > button:last-of-type {
   font-weight: 600;
   cursor: pointer;
   width: 80%;
-  justify-self: center; /* gecentreerd op mobiel */
+  justify-self: center;
 }
 
 section:nth-of-type(1)  > button:last-of-type:hover {
   background: #333;
 }
 
-/* === LARGE SCREEN ADJUSTMENTS === */
-@media (min-width: 56.25em) { /* 900px -> 56.25em */
+@media (min-width: 56.25em) {
   section:nth-of-type(1)  {
-    grid-template-columns: 1fr 1fr; /* groot scherm: twee kolommen */
-    max-width: 75em; /* 1200px -> 75em */
+    grid-template-columns: 1fr 1fr;
+    max-width: 75em;
   }
 
   section:nth-of-type(1)  > img {
     grid-column: 1;
     grid-row: 1 / span 16;
     justify-self: center;
-    order: 0; /* normaal in grid */
+    order: 0;
   }
 
   section:nth-of-type(1)  > :not(img):not(button:last-of-type) {
@@ -88,7 +84,6 @@ section:nth-of-type(1)  > button:last-of-type:hover {
     text-align: left;
   }
 
-  /* winkelwagenknop niet meer gecentreerd */
   section:nth-of-type(1)  > button:last-of-type {
     justify-self: stretch;
     width: 100%;
@@ -113,7 +108,6 @@ section:nth-of-type(2) li {
     grid-template-columns: 1fr 1fr;
     padding-top: 1em;
     padding-bottom: 1em;
-    /* margin-inline: 1em; */
     border-bottom: 1px solid var(--grijs);
     align-items: center;
 }
@@ -166,8 +160,6 @@ section:nth-of-type(4) button, input[type="submit"], input[type="reset"] {
 }
 
 section:nth-of-type(4) li {
-    /* display: flex; */
-    /* flex-direction: row; */
     list-style: none;
 }
 
@@ -186,4 +178,39 @@ section:nth-of-type(4) a {
 
 section:nth-of-type(4) svg {
     width: 3em;
+}
+
+section:nth-of-type(5) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  width: 100vw;
+  height: auto;
+  background-color: var(--section5);
+}
+
+section:nth-of-type(5) img {
+  grid-row: 1 / 4;
+  grid-column: 1;
+  width: 50vw;
+  height: auto;
+}
+
+section:nth-of-type(5) h2 {
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 2em;
+  text-transform: uppercase;
+  font-family: '23';
+  font-size: 1em;
+  color: var(--zwart);
+}
+
+section:nth-of-type(5) p {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 1em;
+  font-family: '19';
+  font-size: 2em;
+  color: var(--zwart);
 }

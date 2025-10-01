@@ -27,32 +27,39 @@
   src: url('https://www.moooi.com/_next/static/media/3f97bb5a08569acf-s.p.woff2');
 }
 
+@font-face {
+  font-family: '19';
+  src: url('https://www.moooi.com/_next/static/media/2de79e73e0d59c93-s.p.woff2');
+}
+
 
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	color-scheme:light dark;
 	--zwart:#000000;
 	--white:#ffffff;
-	--color-background:#eee;
-	--heading-color:light-dark(red, pink);
   --white-beige:#f8f6f1;
   --grijs:#929292;
   --donkergrijs: #3e3e3e;
+  --tekstmarkering:#f3f3f3;
   --section4: #4c363a;
-  --tekstmarkering:light-dark(#f3f3f3, black)
+  --section5: #d9d1bf;
+  --buttonskleur: #f3f3f3;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--color-text:#ffffff;
 		--white-color:#ffffff;
 		--color-background:#eeeeee;
+    --section5:#5e5a50; 
+    --white:#939393;
+    --zwart:#ffffff;
+    --buttonskleur: #d9d1bf;
 	}
-} */
+}
 
 /****************/
 /* JOUW STYLING */
@@ -115,10 +122,6 @@ header nav:nth-of-type(2) {
 
   translate:-100%;
   background-color: var(--white);
-
-  @media (prefers-reduced-motion:no-preference) {
-    transition: .5s;
-  }
 }
 
 header nav:nth-of-type(2) button {
@@ -149,35 +152,6 @@ nav:nth-of-type(2).is-open {
   z-index:999;
 }
 
-/* header search {
-  position:fixed;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
-
-  translate:-100%;
-  background-color: var(--white);
-
-  @media (prefers-reduced-motion:no-preference) {
-    transition: .5s;
-  }
-}
-
-search .zoeken {
-  translate: 0%;
-  z-index:999;
-}
-
-.search {
-  transform: translateY(-100%);
-  transition: transform 0.3s;
-}
-
-.search.zoeken {
-  transform: translateY(0);
-} */
-
 header > button {
   position: absolute;
   top: 1em;
@@ -193,6 +167,11 @@ header > button svg {
   nav:nth-of-type(2).is-open {
     width: 30em;
   }
+}
+
+body {
+  color: var(--zwart);
+  background-color: var(--white);
 }
 
 h2 {
@@ -217,6 +196,7 @@ a {
 
 p {
   font-family: '8';
+  color: var(--zwart)
 }
 
 footer {
@@ -230,12 +210,13 @@ footer button {
   align-items: center;
   justify-content: center;
   border-radius: 3em;
-  margin: 1em;                                  /*???Wit vlak erboven???*/
+  margin: 1em;
   background-color: transparent;
   border-color: var(--white);
   width: fit-content;
   height: 3em;
   width: 50%;
+  color: var(--white);
 }
 
 footer button svg {
@@ -244,7 +225,7 @@ footer button svg {
 
 footer button h3:nth-of-type(1) {
   order: 2;
-  color: var(--white)
+  color: var(--white);
 }
 
 footer button svg:nth-of-type(2) {
@@ -272,6 +253,11 @@ footer ul:nth-of-type(2) li {
 footer ul:nth-of-type(2) a {
   display: flex;
   justify-content: center;
+  color: var(--white);
+}
+
+footer svg {
+  color: var(--white);
 }
 
 svg {

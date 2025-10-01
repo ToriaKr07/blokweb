@@ -9,7 +9,6 @@ h1 {
 }
 
 section:nth-of-type(1) {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,13 +104,10 @@ section li a:hover {
 
 /* Voor schermen groter dan 767px */
 @media (min-width: 768px) {
-
-    /* alle li naast elkaar */
     section ul {
         display: flex;
     }
 
-    /* geen achtergrondkleur meer */
     section li {
         background-color: transparent;
         transition: 1s;
@@ -154,6 +150,7 @@ section:nth-of-type(3) p {
     font-family: '1';
     font-size: 16px;
     width: 80vw;
+    color: var(--white);
 }
 
 section:nth-of-type(3) h2 {
@@ -201,4 +198,8 @@ section:nth-of-type(4) a {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+}
+
+section:nth-of-type(4) p {
+    color: var(--white);
 }
